@@ -16,7 +16,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Bongo")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7f3537e7ebec11aa268ba125fced2a7f575dc51e")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2b08890c6123ba279391a696cd94398d515c612a")]
 [assembly: System.Reflection.AssemblyProductAttribute("Bongo")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Bongo")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
