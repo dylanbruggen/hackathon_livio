@@ -3,8 +3,9 @@
     "",
     "\\Bongo",
     "\\Bongo\\CSS",
-    "\\Bongo\\HTML"
+    "\\Bongo\\HTML",
+    "\\Bongo\\JAVASCRIPT"
   ],
-  "SelectedNode": "\\Bongo\\HTML\\Home.html",
+  "SelectedNode": "\\Bongo\\HTML\\Header.html",
   "PreviewInSolutionExplorer": false
 }

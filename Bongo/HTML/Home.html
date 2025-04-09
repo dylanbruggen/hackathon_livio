@@ -1,22 +1,140 @@
 <!DOCTYPE html>
-<html>
+<html lang="nl">
 <head>
-    <meta charset="UTF-8" />
-    <title>Home</title>
+    <meta charset="UTF-8">
+    <title>Home - Website voor ouderen</title>
+    <style>
+        /* Basisreset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            font-size: 18px; /* Zorgt voor grotere, goed leesbare letters */
+            line-height: 1.6;
+            color: #333;
+            padding: 20px;
+        }
+
+        /* Header-styling */
+        header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+            header h1 {
+                font-size: 2em;
+                margin-bottom: 10px;
+                color: #444;
+            }
+
+        /* Afbeeldingscontainer */
+        .image-container {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+            .image-container img {
+                max-width: 100%;
+                height: auto;
+                border-radius: 8px; /* Ronde hoeken voor een vriendelijk uiterlijk */
+                box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+            }
+
+        /* Container voor de gekleurde blokken */
+        .links-container {
+            display: flex;
+            flex-wrap: wrap; /* Zorgt ervoor dat de blokken doorlopen op de volgende regel als het scherm te smal wordt */
+            justify-content: center; /* Centreert de blokken in het midden */
+            gap: 20px; /* Ruimte tussen de blokken */
+        }
+
+        /* Algemene styling voor elk blok-link */
+        .block-link {
+            flex: 0 1 calc(33.333% - 20px); /* Drie blokken per rij (minus de gap) op grotere schermen */
+            min-width: 150px;
+            background-color: #ccc; /* Placeholder-kleur, wordt hieronder per blok aangepast */
+            color: #000;
+            text-align: center;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.2em;
+            padding: 20px;
+            border-radius: 8px;
+            transition: background-color 0.3s ease;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+        }
+
+            /* Kleuren per blok (6 verschillende) */
+            .block-link:nth-of-type(1) {
+                background-color: #FDD835; /* Geel */
+            }
+
+            .block-link:nth-of-type(2) {
+                background-color: #EF5350; /* Rood */
+            }
+
+            .block-link:nth-of-type(3) {
+                background-color: #AB47BC; /* Paars */
+            }
+
+            .block-link:nth-of-type(4) {
+                background-color: #5C6BC0; /* Blauw */
+            }
+
+            .block-link:nth-of-type(5) {
+                background-color: #29B6F6; /* Lichtblauw */
+            }
+
+            .block-link:nth-of-type(6) {
+                background-color: #66BB6A; /* Groen */
+            }
+
+            /* Hover-effect om te laten zien dat het klikbaar is */
+            .block-link:hover {
+                filter: brightness(0.9);
+                cursor: pointer;
+            }
+
+        /* Responsive aanpassingen voor kleinere schermen */
+        @media (max-width: 768px) {
+            .block-link {
+                flex: 0 1 calc(50% - 20px); /* Twee blokken per rij op tablets/middelgrote schermen */
+            }
+        }
+
+        @media (max-width: 480px) {
+            .block-link {
+                flex: 0 1 calc(100% - 20px); /* Eén blok per rij op telefoons/kleine schermen */
+            }
+        }
+    </style>
 </head>
 <body>
 
-    <div w3-include-html="Header.html"></div>
+    <header>
+        <h1>Welkom op onze website voor ouderen</h1>
+        <p>Hier vindt u handige informatie en activiteiten speciaal voor u.</p>
+    </header>
 
-    <div class="HomePage">
-        <h1>Welkom bij Bongo</h1>
-        <img src="CSS/img/home/Logo.jpeg" alt="Alternate Text" />
+    <!-- Afbeelding bovenaan de pagina; pas de src aan naar je eigen bestandsnaam -->
+    <div class="image-container">
+        <img src="img/ouderen.jpg" alt="Afbeelding van ouderen die samenkomen">
     </div>
 
-    <div w3-include-html="Footer.html"></div>
+    <!-- Zes gekleurde blokken met links naar andere pagina’s -->
+    <div class="links-container">
+        <a href="pagina1.html" class="block-link">Activiteiten</a>
+        <a href="pagina2.html" class="block-link">Nieuws</a>
+        <a href="pagina3.html" class="block-link">Contact</a>
+        <a href="pagina4.html" class="block-link">Foto's</a>
+        <a href="pagina5.html" class="block-link">Informatie</a>
+        <a href="pagina6.html" class="block-link">Over Ons</a>
+    </div>
 
-    <script src="../JAVASCRIPT/w3.js"></script>
-
-    <script>w3.includeHTML();</script>
 </body>
 </html>
